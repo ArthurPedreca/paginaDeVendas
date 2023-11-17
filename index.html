@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Renda Artesanal</title>
+    <link rel="shortcut icon"
+        href="https://cdn.greatsoftwares.com.br/arquivos/paginas/75409-8b6f867347c8d3d83c3e9f03909097c7.png"
+        type="image/x-icon">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            /* Azul marinho, ajuste o gradiente conforme necessário */
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-image: url("fundo.png");
+            background-attachment: fixed;
+            background-size: cover;
+            /* Faz com que a imagem de fundo cubra toda a área disponível */
+            background-repeat: no-repeat;
+            /* Impede que a imagem se repita */
+            background-position: center;
+            /* Centraliza a imagem de fundo na página */
+        }
+
+        h1 {
+            width: 50%;
+            font-size: 2.5em;
+            /* Ajuste conforme necessário */
+            margin-bottom: 50px;
+            padding-top: 20px;
+            /* Espaço no topo */
+        }
+
+        .video-container {
+            position: relative;
+            width: 80%;
+            /* Largura do vídeo */
+            max-width: 800px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .a {
+            background-color: chartreuse;
+            font-family: 'Poppins', sans-serif;
+            /* Ajuste a cor conforme necessário */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin-top: -50px;
+            /* Ajuste conforme necessário para sobrepor */
+            border: none;
+            border-radius: 50px;
+            font-size: 1.5em;
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -100px;
+            /* Ajuste conforme necessário para sobrepor */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .footer {
+            background-color: #00002E;
+            /* Ajuste conforme necessário */
+            color: white;
+            width: 100%;
+            font-size: 1em;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+        }
+
+        span {
+            color: chartreuse;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+                padding: 10px 0;
+                width: 80%;
+                /* Adicionado para espaçamento no mobile */
+            }
+
+            .video-container {
+                width: 95%;
+                /* Aumento da largura do vídeo para foco no mobile */
+            }
+            .a {
+                font-size: 1.2em;
+                /* Tamanho da fonte reduzido para mobile */
+                padding: 10px 20px;
+                margin-top: -20px;
+                /* Ajuste conforme necessário para sobrepor */
+                bottom: -70px;
+                /* Ajuste conforme necessário para sobrepor */
+                width: 90%;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                /* Fixo no fundo da página */
+                bottom: 0px;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1060536332028135'); // Substitua pelo ID do Pixel fornecido pelo cliente
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1060536332028135&ev=PageView&noscript=1" /></noscript>
+</head>
+
+<body>
+    <h1>Veja como você pode <span>Ganhar</span> de <span>R$500</span> a <span>R$1.000</span> em <span>7 DIAS</span> com
+        <span>Artesanato!</span>
+    </h1>
+    <div class="video-container">
+        <video controls>
+            <source src="" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <a href="https://pay.kiwify.com.br/YLnHlgh" _blanck class="a">QUERO ADQUIRIR AGORA!</a>
+    </div>
+    <div class="footer">
+        Copyright © 2023 - Todos os direitos reservados.
+    </div>
+
+
+</body>
+
+</html>
