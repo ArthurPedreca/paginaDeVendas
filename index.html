@@ -11,10 +11,9 @@
     <style>
         body,
         html {
-            height: 100%;
+            height: auto;
             margin: 0;
             padding: 0;
-            /* Azul marinho, ajuste o gradiente conforme necessário */
             font-family: 'Poppins', sans-serif;
             color: white;
             display: flex;
@@ -24,100 +23,104 @@
             background-image: url("fundo.png");
             background-attachment: fixed;
             background-size: cover;
-            /* Faz com que a imagem de fundo cubra toda a área disponível */
             background-repeat: no-repeat;
-            /* Impede que a imagem se repita */
             background-position: center;
-            /* Centraliza a imagem de fundo na página */
+
+        }
+
+        body {
+            min-height: 100vh;
+            /* Garantir que o body ocupe no mínimo a altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 60px;
         }
 
         h1 {
-            width: 50%;
-            font-size: 2.5em;
-            /* Ajuste conforme necessário */
-            margin-bottom: 50px;
+            width: 80%;
+            /* Ajustado para ser um pouco mais responsivo */
+            font-size: 2.6vw;
+            /* Utilizando vw para escalar com a largura da tela */
+            margin-bottom: 5vh;
+            /* Utilizando vh para um espaçamento vertical responsivo */
             padding-top: 20px;
-            /* Espaço no topo */
         }
 
         .video-container {
             position: relative;
             width: 80%;
-            /* Largura do vídeo */
+            /* Largura como porcentagem para ser responsiva */
             max-width: 800px;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
+            /* Max-width para limitar o tamanho em telas grandes */
+            margin-bottom: 10px !important;
         }
 
         .a {
             background-color: chartreuse;
             font-family: 'Poppins', sans-serif;
-            /* Ajuste a cor conforme necessário */
             color: white;
             text-decoration: none;
             padding: 15px 30px;
-            margin-top: -50px;
-            /* Ajuste conforme necessário para sobrepor */
             border: none;
             border-radius: 50px;
-            font-size: 1.5em;
+            font-size: calc(1.2em + 0.5vw);
             cursor: pointer;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -100px;
-            /* Ajuste conforme necessário para sobrepor */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            position: relative;
+            /* Se necessário, ajuste para absolute e controle a posição exata */
+            z-index: 10;
         }
 
         .footer {
             background-color: #00002E;
-            /* Ajuste conforme necessário */
             color: white;
             width: 100%;
             font-size: 1em;
             padding: 10px 0;
-            position: absolute;
+            position: fixed;
+            /* Mudado para fixed para evitar ser empurrado pela altura do conteúdo */
             bottom: 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
+
 
         span {
             color: chartreuse;
             text-decoration: underline;
         }
 
+        /* Regras existentes de @media */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.5em;
+                font-size: 5vw;
+                /* Aumentar a fonte responsivamente para telas menores */
                 padding: 10px 0;
-                width: 80%;
-                /* Adicionado para espaçamento no mobile */
+                width: 95%;
+                /* Aumentar a largura para telas menores */
             }
 
             .video-container {
                 width: 95%;
-                /* Aumento da largura do vídeo para foco no mobile */
+                /* Ajuste para telas menores */
             }
 
             .a {
-                font-size: 1.2em;
-                /* Tamanho da fonte reduzido para mobile */
+                font-size: calc(1em + 1vw);
+                /* Aumentar a fonte responsivamente para telas menores */
                 padding: 10px 20px;
-                margin-top: -20px;
-                /* Ajuste conforme necessário para sobrepor */
-                bottom: -70px;
-                /* Ajuste conforme necessário para sobrepor */
+                margin-top: 30px !important;
                 width: 90%;
+                /* Ajuste para telas menores */
             }
 
             .footer {
                 position: fixed;
+                /* Manter fixo */
                 bottom: 0;
-                /* Fixo no fundo da página */
-                bottom: 0px;
             }
         }
     </style>
@@ -154,19 +157,19 @@
         <span>Artesanato!</span>
     </h1>
     <div class="video-container">
-            <div id="vid_655249f67aaa9a000955e9c2"
-                style="position:relative;width:100%;padding: 66.66666666666666% 0 0;"><img
-                    id="thumb_655249f67aaa9a000955e9c2"
-                    src="https://images.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/thumbnail.jpg"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
-                <div id="backdrop_655249f67aaa9a000955e9c2"
-                    style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
-                </div>
+        <div id="vid_655249f67aaa9a000955e9c2" style="position:relative;width:100%;padding: 66.66666666666666% 0 0;"
+            class="abaixa">
+            <img id="thumb_655249f67aaa9a000955e9c2"
+                src="https://images.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/thumbnail.jpg"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+            <div id="backdrop_655249f67aaa9a000955e9c2"
+                style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
             </div>
-            <script type="text/javascript"
-                id="scr_655249f67aaa9a000955e9c2">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/player.js", s.async = !0, document.head.appendChild(s);</script>
-        <a href="https://pay.kiwify.com.br/YLnHlgh" _blanck class="a">QUERO ADQUIRIR AGORA!</a>
-    </div>
+        </div>
+        <script type="text/javascript"
+            id="scr_655249f67aaa9a000955e9c2">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/player.js", s.async = !0, document.head.appendChild(s);</script>
+        </div>
+        <a href="https://pay.kiwify.com.br/YLnHlgh" class="a">QUERO ADQUIRIR AGORA!</a>
     <div class="footer">
         Copyright © 2023 - Todos os direitos reservados.
     </div>
