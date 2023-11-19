@@ -40,19 +40,13 @@
 
         h1 {
             width: 35%;
-            /* Ajustado para ser um pouco mais responsivo */
-            font-size: 2.3vw;
-            /* Utilizando vw para escalar com a largura da tela */
-            margin-bottom: 5vh;
-            /* Utilizando vh para um espaçamento vertical responsivo */
+            font-size: 1.85vw;
         }
 
         .video-container {
             position: relative;
             width: 60%;
             max-width: 550px;
-            /* Max-width para limitar o tamanho em telas grandes */
-            margin-bottom: 10px !important;
         }
 
         .a {
@@ -60,7 +54,7 @@
             font-family: 'Poppins', sans-serif;
             color: white;
             text-decoration: none;
-            padding: 15px 30px;
+            padding: 10px 30px;
             border: none;
             border-radius: 50px;
             font-size: calc(1.2em + 0.5vw);
@@ -68,15 +62,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
             position: relative;
             z-index: 10;
-            margin-top: 20px;
-            margin-bottom: 20px;
         }
 
         .footer {
             background-color: #00002E;
             color: white;
             width: 100vw !important;
-            font-size: 1em;
+            font-size: .8em;
             padding: 10px 0;
             position: fixed;
             /* Mudado para fixed para evitar ser empurrado pela altura do conteúdo */
@@ -95,19 +87,32 @@
             justify-content: space-between;
             align-items: center;
             flex: 1;
-            /* Isso fará com que .content-wrapper cresça e ocupe o espaço disponível */
             display: flex;
             flex-direction: column;
-            /* A mesma direção de flex para manter a consistência */
             justify-content: space-between;
-
-
         }
 
 
         span {
             color: chartreuse;
             text-decoration: underline;
+        }
+
+        @media (min-width: 1300px) and (max-width: 1600px) {
+            .a {
+                font-size: calc(.8em + 0.5vw);
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .video-container {
+                width: 60%;
+                max-width: 580px;
+            }
+
+            h1{
+                width: 30%;
+            }
         }
 
         /* Regras existentes de @media */
