@@ -104,7 +104,7 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
-            
+
 
             .video-container {
                 position: relative;
@@ -230,6 +230,20 @@
             Copyright © 2023 - Todos os direitos reservados.
         </div>
     </div>
+
+    <script>
+        var botao = document.querySelector('.a');
+        botao.style.display = 'none'
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var botao = document.querySelector('.a'); // Substitua '.a' pelo seletor correto do seu botão
+                if (botao) {
+                    botao.style.display = 'block'; // Altera o display para 'block', fazendo o botão aparecer
+                }
+            }, 30 * 1000); // 866 segundos multiplicado por 1000 para converter em milissegundos
+        });
+
+    </script>
 
 </body>
 
