@@ -98,7 +98,16 @@
             text-decoration: underline;
         }
 
-        @media (min-width: 1300px) and (max-width: 1600px) {
+        @media (min-width: 800px) and (max-width: 999px){
+            .a{
+                font-size: calc(.8em + 0.5vw);
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        @media (min-width: 1000px) and (max-width: 1650px) {
             .a {
                 font-size: calc(.8em + 0.5vw);
                 margin-top: 20px;
@@ -110,13 +119,13 @@
                 max-width: 580px;
             }
 
-            h1{
+            h1 {
                 width: 30%;
             }
         }
 
         /* Regras existentes de @media */
-        @media (max-width: 768px) {
+        @media (max-width: 700px) {
             h1 {
                 font-size: 5vw;
                 /* Aumentar a fonte responsivamente para telas menores */
