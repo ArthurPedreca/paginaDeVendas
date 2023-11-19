@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Renda Artesanal</title>
+    <link rel="shortcut icon"
+        href="https://cdn.greatsoftwares.com.br/arquivos/paginas/75409-8b6f867347c8d3d83c3e9f03909097c7.png"
+        type="image/x-icon">
+    <style>
+        body,
+        html {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-image: url("fundo.png");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100%;
+
+        }
+
+        body {
+            /* Garantir que o body ocupe no mínimo a altura da tela */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        h1 {
+            width: 35%;
+            font-size: 1.85vw;
+        }
+
+        .video-container {
+            position: relative;
+            width: 60%;
+            max-width: 550px;
+        }
+
+        .a {
+            background-color: chartreuse;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: calc(1.2em + 0.5vw);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 10;
+        }
+
+        .footer {
+            background-color: #00002E;
+            color: white;
+            width: 100vw !important;
+            font-size: .8em;
+            padding: 10px 0;
+            position: fixed;
+            /* Mudado para fixed para evitar ser empurrado pela altura do conteúdo */
+            bottom: 0;
+            width: 100%;
+            position: relative;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrumar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        span {
+            color: chartreuse;
+            text-decoration: underline;
+        }
+
+        @media (min-width: 1300px) and (max-width: 1600px) {
+            .a {
+                font-size: calc(.8em + 0.5vw);
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .video-container {
+                width: 60%;
+                max-width: 580px;
+            }
+
+            h1{
+                width: 30%;
+            }
+        }
+
+        /* Regras existentes de @media */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 5vw;
+                /* Aumentar a fonte responsivamente para telas menores */
+                padding: 10px 0;
+                width: 95%;
+                /* Aumentar a largura para telas menores */
+            }
+
+            .video-container {
+                width: 95%;
+                /* Ajuste para telas menores */
+            }
+
+            .a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.1rem;
+                /* Aumentar a fonte responsivamente para telas menores */
+                padding: 10px 20px;
+                margin-top: 30px !important;
+                width: 60%;
+                height: 20px;
+                /* Ajuste para telas menores */
+            }
+
+            .footer {
+                position: fixed;
+                /* Manter fixo */
+                bottom: 0;
+                font-size: 0.6rem
+            }
+
+            body {
+                height: 100vh;
+            }
+
+            .arrumar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                height: 90vh;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1060536332028135'); // Substitua pelo ID do Pixel fornecido pelo cliente
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1060536332028135&ev=PageView&noscript=1" /></noscript>
+</head>
+
+<body>
+
+
+
+    <div class="arrumar">
+        <h1>Veja como você pode <span>Ganhar</span> de <span>R$500</span> a <span>R$1.000</span> em <span>7 DIAS</span>
+            com
+            <span>Artesanato!</span>
+        </h1>
+        <div class="video-container">
+            <div id="vid_655249f67aaa9a000955e9c2" style="position:relative;width:100%;padding: 66.66666666666666% 0 0;"
+                class="abaixa">
+                <img id="thumb_655249f67aaa9a000955e9c2"
+                    src="https://images.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/thumbnail.jpg"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                <div id="backdrop_655249f67aaa9a000955e9c2"
+                    style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+                </div>
+            </div>
+            <script type="text/javascript"
+                id="scr_655249f67aaa9a000955e9c2">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/player.js", s.async = !0, document.head.appendChild(s);</script>
+        </div>
+        <a href="https://pay.kiwify.com.br/YLnHlgh" class="a">QUERO ADQUIRIR AGORA!</a>
+        <div class="footer">
+            Copyright © 2023 - Todos os direitos reservados.
+        </div>
+    </div>
+
+</body>
+
+</html>
