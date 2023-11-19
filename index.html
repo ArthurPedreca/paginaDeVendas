@@ -29,22 +29,20 @@
         }
 
         body {
-            min-height: 100vh;
             /* Garantir que o body ocupe no mínimo a altura da tela */
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-bottom: 60px;
+            height: 100%;
         }
 
         h1 {
             width: 80%;
             /* Ajustado para ser um pouco mais responsivo */
-            font-size: 2.6vw;
+            font-size: 2vw;
             /* Utilizando vw para escalar com a largura da tela */
             margin-bottom: 5vh;
             /* Utilizando vh para um espaçamento vertical responsivo */
-            padding-top: 20px;
         }
 
         .video-container {
@@ -70,6 +68,7 @@
             position: relative;
             /* Se necessário, ajuste para absolute e controle a posição exata */
             z-index: 10;
+            margin-top: 60px;
         }
 
         .footer {
@@ -109,11 +108,15 @@
             }
 
             .a {
-                font-size: calc(1em + 1vw);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.1rem;
                 /* Aumentar a fonte responsivamente para telas menores */
                 padding: 10px 20px;
                 margin-top: 30px !important;
-                width: 90%;
+                width: 60%;
+                height: 20px;
                 /* Ajuste para telas menores */
             }
 
@@ -121,6 +124,19 @@
                 position: fixed;
                 /* Manter fixo */
                 bottom: 0;
+                font-size: 0.6rem
+            }
+
+            body {
+                height: 100vh;
+            }
+
+            .arrumar{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 80%;
             }
         }
     </style>
@@ -152,28 +168,29 @@
 
 
 
-
-    <h1>Veja como você pode <span>Ganhar</span> de <span>R$500</span> a <span>R$1.000</span> em <span>7 DIAS</span> com
-        <span>Artesanato!</span>
-    </h1>
-    <div class="video-container">
-        <div id="vid_655249f67aaa9a000955e9c2" style="position:relative;width:100%;padding: 66.66666666666666% 0 0;"
-            class="abaixa">
-            <img id="thumb_655249f67aaa9a000955e9c2"
-                src="https://images.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/thumbnail.jpg"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
-            <div id="backdrop_655249f67aaa9a000955e9c2"
-                style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+    <div class="arrumar">
+        <h1>Veja como você pode <span>Ganhar</span> de <span>R$500</span> a <span>R$1.000</span> em <span>7 DIAS</span>
+            com
+            <span>Artesanato!</span>
+        </h1>
+        <div class="video-container">
+            <div id="vid_655249f67aaa9a000955e9c2" style="position:relative;width:100%;padding: 66.66666666666666% 0 0;"
+                class="abaixa">
+                <img id="thumb_655249f67aaa9a000955e9c2"
+                    src="https://images.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/thumbnail.jpg"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                <div id="backdrop_655249f67aaa9a000955e9c2"
+                    style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+                </div>
             </div>
-        </div>
-        <script type="text/javascript"
-            id="scr_655249f67aaa9a000955e9c2">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/player.js", s.async = !0, document.head.appendChild(s);</script>
+            <script type="text/javascript"
+                id="scr_655249f67aaa9a000955e9c2">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/d51dd38c-b53e-4c64-b29d-36d0d315bd92/players/655249f67aaa9a000955e9c2/player.js", s.async = !0, document.head.appendChild(s);</script>
         </div>
         <a href="https://pay.kiwify.com.br/YLnHlgh" class="a">QUERO ADQUIRIR AGORA!</a>
-    <div class="footer">
-        Copyright © 2023 - Todos os direitos reservados.
+        <div class="footer">
+            Copyright © 2023 - Todos os direitos reservados.
+        </div>
     </div>
-
 
 </body>
 
